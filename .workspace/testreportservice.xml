@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TESTREPORTSERVICE-SETTINGS format-rev="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TESTREPORTSERVICE xsi:type="testReportService">
+		<SERVICE-HOST-LOCATION xsi:type="string">127.0.0.1</SERVICE-HOST-LOCATION>
+		<AUTO-TRANSMIT-REPORT-TO-SERVICE xsi:type="boolean">True</AUTO-TRANSMIT-REPORT-TO-SERVICE>
+		<REPORT-SETTINGS>
+			<ELEMENT dkey="projectId">
+				<DVALUE xsi:type="string">6</DVALUE>
+			</ELEMENT>
+			<ELEMENT dkey="uploadAuthenticationKey">
+				<DVALUE xsi:type="string">p2batQI=.E3F0PTvyBxrJJG2rPKjhKYmaogJCdagsa_3oRwFCZj8=</DVALUE>
+			</ELEMENT>
+			<ELEMENT dkey="useSettingsFromServer">
+				<DVALUE xsi:type="string">True</DVALUE>
+			</ELEMENT>
+		</REPORT-SETTINGS>
+	</TESTREPORTSERVICE>
+</TESTREPORTSERVICE-SETTINGS>
