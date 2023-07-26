@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2023.2.0.137559+3ef7f992b5c4" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace"/>
+	<TM-INFO format-rev="1" xsi:type="testManagementInfo">
+		<TESTSCRIPT-ID xsi:type="string">W10</TESTSCRIPT-ID>
+	</TM-INFO>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="3" id="d7be8872-4b16-4f67-ac78-0c85abc25d46" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">Wait 10 seconds</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP id="8336ee60-5a5a-497b-9c03-b8cad37f596b" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+				<TIME format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">10</VALUE>
+				</TIME>
+				<UNIT xsi:type="string">s</UNIT>
+			</TESTSTEP>
+			<TESTSTEP format-rev="1" id="935254e7-98e4-4e0b-b9e5-b4ae7e556761" name="TsComment" xsi:type="utility-1f4de951-4fef-11dc-969a-0013728784ee">
+				<COMMENT-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">Wait 10s successfully</VALUE>
+				</COMMENT-EXPRESSION>
+				<COMMENT-VERDICT xsi:type="string">SUCCESS</COMMENT-VERDICT>
+			</TESTSTEP>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>
