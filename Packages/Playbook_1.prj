@@ -10,7 +10,20 @@
 			<ENABLED xsi:type="boolean">True</ENABLED>
 			<REPORTING xsi:type="boolean">True</REPORTING>
 			<ID xsi:type="string">e6bba424022811ebb045fc7774225e38</ID>
-			<COMPONENTS/>
+			<COMPONENTS>
+				<COMPONENT format-rev="7" xsi:type="configChange">
+					<NAME xsi:type="string">Change configuration</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">089f19d32c2811eea2b53ce9f764dd53</ID>
+					<ACTION xsi:type="string">START</ACTION>
+					<KEEP-TEST-CONFIG xsi:type="boolean">False</KEEP-TEST-CONFIG>
+					<LOAD-TEST-CONFIG xsi:type="string">Camera.tcf</LOAD-TEST-CONFIG>
+					<KEEP-TEST-BENCH-CONFIG xsi:type="boolean">False</KEEP-TEST-BENCH-CONFIG>
+					<LOAD-TEST-BENCH-CONFIG xsi:type="string">Camera.tbc</LOAD-TEST-BENCH-CONFIG>
+					<TOOL-TREATMENTS/>
+				</COMPONENT>
+			</COMPONENTS>
 		</COMPONENT>
 		<COMPONENT format-rev="10" xsi:type="subproject">
 			<NAME xsi:type="string">Tests</NAME>
@@ -27,6 +40,18 @@
 					<PACKAGE-REF xsi:type="expressionref">
 						<PATH-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
 							<VALUE xsi:type="string">Wait 10s.pkg</VALUE>
+						</PATH-EXPRESSION>
+					</PACKAGE-REF>
+				</COMPONENT>
+				<COMPONENT format-rev="6" xsi:type="packageTest">
+					<NAME xsi:type="string">Take photos</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">0cdfad7d2c2811ee9c083ce9f764dd53</ID>
+					<COMPONENTS/>
+					<PACKAGE-REF xsi:type="expressionref">
+						<PATH-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="string">Take photos.pkg</VALUE>
 						</PATH-EXPRESSION>
 					</PACKAGE-REF>
 				</COMPONENT>

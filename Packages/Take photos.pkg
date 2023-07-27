@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2023.2.0.137559+3ef7f992b5c4" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">pic1</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Camera/Image</ID>
+			<XACCESS xsi:type="xaMediaImageVariable">
+				<NAME xsi:type="string">Image</NAME>
+				<SUT xsi:type="string">Camera</SUT>
+				<MASK-REFERENCE/>
+			</XACCESS>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<TM-INFO format-rev="1" xsi:type="testManagementInfo">
+		<TESTSCRIPT-ID xsi:type="string">T001</TESTSCRIPT-ID>
+	</TM-INFO>
+	<TRACE-RECORDING format-rev="4" xsi:type="recordingManager">
+		<SIGNAL-GROUPS>
+			<ELEMENT format-rev="2" xsi:type="signalGroup">
+				<NAME xsi:type="string">Camera</NAME>
+				<DESCRIPTION xsi:type="string"/>
+				<SIGNALS>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">Camera/Image</MAPPING-REF>
+					</ELEMENT>
+				</SIGNALS>
+			</ELEMENT>
+		</SIGNAL-GROUPS>
+		<RECORDING-GROUP>
+			<ELEMENT format-rev="3" xsi:type="recordingGroup">
+				<NAME xsi:type="string">Recording group for Camera</NAME>
+				<UUID xsi:type="string">a40ccb4b2c2311ee93eb3ce9f764dd53</UUID>
+				<RECORDING-MODE xsi:type="integer">2</RECORDING-MODE>
+				<SIGNAL-GROUP-REF>Camera</SIGNAL-GROUP-REF>
+			</ELEMENT>
+		</RECORDING-GROUP>
+		<SYNCHRONISATION-CONFIG xsi:type="syncConfig"/>
+		<TRACE-MERGE-CONFIG xsi:type="traceMergeConfig">
+			<MODE xsi:type="integer">0</MODE>
+			<PATH format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="string">merged</VALUE>
+			</PATH>
+		</TRACE-MERGE-CONFIG>
+	</TRACE-RECORDING>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="3" id="add4fc07-209f-4887-b233-c088b8a7848a" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">Take a photo</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP format-rev="1" id="4df00fcc-cc4c-497e-af92-878eef99cb30" xsi:type="tsReadImage">
+				<MAPPING-REF xsi:type="string">Camera/Image</MAPPING-REF>
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="string">pic1</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<FILTERS/>
+			</TESTSTEP>
+			<TESTSTEP id="92c062c6-0297-4ccb-bc04-8c6808123357" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+				<TIME format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">10</VALUE>
+				</TIME>
+				<UNIT xsi:type="string">s</UNIT>
+			</TESTSTEP>
+			<TESTSTEP format-rev="1" id="1eae5fc0-2c78-465f-90aa-fedfd0ffc8df" name="TsComment" xsi:type="utility-1f4de951-4fef-11dc-969a-0013728784ee">
+				<COMMENT-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">Take shots successfully</VALUE>
+				</COMMENT-EXPRESSION>
+				<COMMENT-VERDICT xsi:type="string">SUCCESS</COMMENT-VERDICT>
+			</TESTSTEP>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>
