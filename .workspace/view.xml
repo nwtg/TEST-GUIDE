@@ -2,8 +2,8 @@
 <VIEW-SETTINGS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<LAYOUT format-rev="3" xsi:type="layout">
 		<VARIABLE-COMPLETE-SIZE>
-			<ELEMENT xsi:type="integer">200</ELEMENT>
-			<ELEMENT xsi:type="integer">200</ELEMENT>
+			<ELEMENT xsi:type="integer">400</ELEMENT>
+			<ELEMENT xsi:type="integer">250</ELEMENT>
 		</VARIABLE-COMPLETE-SIZE>
 		<SEARCH-DIALOG-LAYOUTS/>
 		<RESOLUTION-LAYOUTS>
