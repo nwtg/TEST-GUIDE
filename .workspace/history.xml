@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <HISTORY-SETTINGS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<RECENT-TCFFILES>
+		<ELEMENT xsi:type="string">C:\Users\Toto\TTS-TM-ResourcenAdapter\Execution_Resources\BundleCache\scm_DNwCiPa2aK-QGR3EjydnTWWeOQA\Configurations\Camera.tcf</ELEMENT>
 		<ELEMENT xsi:type="string">Configurations\Camera.tcf</ELEMENT>
 	</RECENT-TCFFILES>
 	<LAST-TCF-SAVED xsi:type="boolean">False</LAST-TCF-SAVED>
 	<RECENT-TBC-FILES>
+		<ELEMENT xsi:type="string">C:\Users\Toto\TTS-TM-ResourcenAdapter\Execution_Resources\BundleCache\scm_DNwCiPa2aK-QGR3EjydnTWWeOQA\Configurations\Camera.tbc</ELEMENT>
 		<ELEMENT xsi:type="string">Configurations\Camera.tbc</ELEMENT>
 	</RECENT-TBC-FILES>
 	<LAST-TBC-SAVED xsi:type="boolean">False</LAST-TBC-SAVED>
 	<RECENT-PROJECTS-PACKAGES>
 		<ELEMENT xsi:type="string">Packages\Playbook_1.prj</ELEMENT>
+		<ELEMENT xsi:type="string">Packages\Stop tools.pkg</ELEMENT>
 		<ELEMENT xsi:type="string">Packages\Take photos.pkg</ELEMENT>
 		<ELEMENT xsi:type="string">Packages\Wait 10s.pkg</ELEMENT>
 	</RECENT-PROJECTS-PACKAGES>

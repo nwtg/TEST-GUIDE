@@ -55,6 +55,18 @@
 						</PATH-EXPRESSION>
 					</PACKAGE-REF>
 				</COMPONENT>
+				<COMPONENT format-rev="6" xsi:type="packageTest">
+					<NAME xsi:type="string">Wait 10s</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">3c41f1ef327411eeaa393ce9f764dd53</ID>
+					<COMPONENTS/>
+					<PACKAGE-REF xsi:type="expressionref">
+						<PATH-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="string">Wait 10s.pkg</VALUE>
+						</PATH-EXPRESSION>
+					</PACKAGE-REF>
+				</COMPONENT>
 			</COMPONENTS>
 		</COMPONENT>
 		<COMPONENT format-rev="10" xsi:type="subproject">
