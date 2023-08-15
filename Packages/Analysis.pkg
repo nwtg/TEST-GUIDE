@@ -27,5 +27,10 @@
 				</EXPRESSION>
 			</EXPECTATION-OPTION>
 		</TESTSTEP>
+		<TESTSTEP id="d7fc68ff-df21-4414-b27d-207b732dfafd" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+			<TIME format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="integer">200</VALUE>
+			</TIME>
+		</TESTSTEP>
 	</TESTSTEPS>
 </PACKAGE>
