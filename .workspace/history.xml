@@ -11,6 +11,7 @@
 	</RECENT-TBC-FILES>
 	<LAST-TBC-SAVED xsi:type="boolean">False</LAST-TBC-SAVED>
 	<RECENT-PROJECTS-PACKAGES>
+		<ELEMENT xsi:type="string">Packages\Analysis.pkg</ELEMENT>
 		<ELEMENT xsi:type="string">Packages\Playbook_1.prj</ELEMENT>
 		<ELEMENT xsi:type="string">Packages\Stop tools.pkg</ELEMENT>
 		<ELEMENT xsi:type="string">Packages\Take photos.pkg</ELEMENT>
